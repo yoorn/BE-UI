@@ -1,0 +1,18 @@
+<view class="be-input">
+  <view class="input-outline {{focusStatus ? 'focus' : ''}} {{error ? 'input-error' : ''}}">
+    <input
+      value="{{value}}"
+      type="{{type}}"
+      password="{{password}}"
+      bindfocus="onFocus"
+      bindblur="onBlur"
+      bindinput="onInputChange"
+      bindconfirm="onConfirm"
+      confirm-type="{{confirmType}}"
+      disabled="{{disabled}}"
+      maxlength="{{maxlength}}"
+    />
+    <view class="label {{hasCursor ? 'label-focus' : ''}} {{hasCursor && focusStatus ? '' : 'label-focus-gray'}} {{error ? 'label-error' : ''}}">{{label}}</view>
+  </view>
+  <view class="hint {{error ? 'error' : ''}}" wx:if="{{persistentHint.length > 0 || error}}">{{error ? error : persistentHint}}</view>
+</view>

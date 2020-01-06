@@ -1,0 +1,4 @@
+<view>
+  <be-field label="Phone" rules="{{phoneRule}}" />
+  <be-field label="用户名" persistent-hint="只能是英文" />
+</view>

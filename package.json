@@ -1,0 +1,22 @@
+{
+  "name": "blue",
+  "version": "0.0.1",
+  "description": "a WeChat mini-program Components.",
+  "main": "index.js",
+  "repository": "https://github.com/yoorn/BE-UI.git",
+  "author": "yoorn <usckur@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "gulp -f build/index.js dev",
+    "build": "gulp -f build/index.js build",
+    "watch": "gulp -f build/index.js watch"
+  },
+  "devDependencies": {
+    "del": "^5.1.0",
+    "es-checker": "^1.4.2",
+    "eslint": "^6.6.0",
+    "gulp": "^4.0.2",
+    "gulp-rename": "^1.4.0",
+    "gulp-less": "^4.0.1"
+  }
+}

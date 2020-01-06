@@ -1,0 +1,59 @@
+@import "../assets/blue.less";
+
+.be-input {
+  margin: 20rpx 0;
+  .input-outline {
+    box-sizing: border-box;
+    position: relative;
+    transition: all 300ms cubic-bezier(0.25, 0.8, 0.5, 1);
+    height: 80rpx;
+    border: 1px solid @color-field-gray;
+    border-radius: 8rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24rpx;
+    font-size: 28rpx;
+    background: #fff;
+    .label {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all 300ms cubic-bezier(0.25, 0.8, 0.5, 1);
+      background: #fff;
+      color: @color-field;
+    }
+    .label-focus {
+      padding: 0 8rpx;
+      font-size: 20rpx;
+      color: @color-field-active;
+      transform: translateY(-50%);
+      top: 0;
+    }
+    .label-focus-gray {
+      // padding: 0 8rpx;
+      // font-size: 20rpx;
+      color: @color-field;
+      // transform: translateY(-50%);
+      // top: 0;
+    }
+    .label-error {
+      color: @danger;
+    }
+  }
+  .input-error {
+    border-color: @danger;
+  }
+  .focus {
+    border-width: 4rpx;
+    border-color: @color-field-active;
+  }
+  .hint {
+    font-size: 20rpx;
+    color: @color-field-gray;
+    margin: 8rpx 24rpx;
+  }
+  .error {
+    color: @danger;
+  }
+}
