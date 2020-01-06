@@ -102,3 +102,11 @@ dist
 
 # TernJS port file
 .tern-port
+
+.vscode
+package-lock.json
+.DS_Store
+examples/project.config.json
+.project
+.settings
+.idea
