@@ -1,5 +1,5 @@
-<view class="be-input">
-  <view class="input-outline {{focusStatus ? 'focus' : ''}} {{error ? 'input-error' : ''}}">
+<view class="be-field">
+  <view class="input-outline {{isFocus ? 'input-active' : ''}} {{error ? 'input-error' : ''}}">
     <input
       value="{{value}}"
       type="{{type}}"
@@ -12,7 +12,7 @@
       disabled="{{disabled}}"
       maxlength="{{maxlength}}"
     />
-    <view class="label {{hasCursor ? 'label-focus' : ''}} {{hasCursor && focusStatus ? '' : 'label-focus-gray'}} {{error ? 'label-error' : ''}}">{{label}}</view>
+    <view class="label {{hasContent ? 'float' : ''}} {{isFocus ? 'label-active' : ''}} {{error ? 'lable-error' : ''}}">{{label}}</view>
   </view>
-  <view class="hint {{error ? 'error' : ''}}" wx:if="{{persistentHint.length > 0 || error}}">{{error ? error : persistentHint}}</view>
+  <view class="error {{error ? '' : 'error-hidden'}}">{{error}}</view>
 </view>

@@ -1,0 +1,22 @@
+var focus = function(event, ownerInstance) {
+  var label = ownerInstance.selectComponent('.label')
+  label.setStyle({color: 'red'})
+
+  ownerInstance.callMethod('onFocus')
+
+  return false
+}
+
+var blur = function(event, ownerInstance) {
+  var label = ownerInstance.selectComponent('.label')
+  label.setStyle({color: ''})
+  
+  ownerInstance.callMethod('onBlur')
+
+  return false
+}
+
+module.exports = {
+  focus: focus,
+  blur: blur
+}

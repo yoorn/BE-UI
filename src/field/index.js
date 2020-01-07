@@ -57,29 +57,29 @@ Component({
   },
 
   data: {
-    focusStatus: false,
-    hasCursor: false,
+    isFocus: false,
+    hasContent: false,
   },
 
   methods: {
     onFocus() {
       this.setData({
-        focusStatus: true,
-        hasCursor: true
+        isFocus: true,
+        hasContent: true
       })
     },
 
     onBlur(e) {
       const detail = e.detail
-      if (detail.cursor > 0) {
+      if (detail.cursor && detail.cursor > 0) {
         // TODO
       } else {
         this.setData({
-          hasCursor: false
+          hasContent: false
         })
       }
       this.setData({
-        focusStatus: false
+        isFocus: false
       })
 
       this.check()

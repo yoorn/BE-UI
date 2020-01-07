@@ -27,6 +27,7 @@ module.exports = {
     () => {
       watch(`${SRC_PATH}/**/*.js`, copy(SRC_PATH, EXAMPLES_PATH, 'js')),
       watch(`${SRC_PATH}/**/*.json`, copy(SRC_PATH, EXAMPLES_PATH, 'json')),
+      watch(`${SRC_PATH}/**/*.wxs`, copy(SRC_PATH, EXAMPLES_PATH, 'wxs')),
       watch(`${SRC_PATH}/**/*.wxml`, copy(SRC_PATH, EXAMPLES_PATH, 'wxml')),
       watch([`${SRC_PATH}/**/*.less`, `!${SRC_PATH}/assets/blue.less`], buildWxss(SRC_PATH, EXAMPLES_PATH))
     }
