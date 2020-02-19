@@ -1,4 +1,2 @@
-<view>
-  <be-field label="Phone" rules="{{phoneRule}}" rules="{{phoneRule}}" />
-  <be-field label="用户名" persistent-hint="只能是英文" />
-</view>
+<be-overlay show="{{showOverlay}}" />
+<button bindtap="show">显示</button>

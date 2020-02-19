@@ -4,12 +4,14 @@ const app = getApp()
 
 Page({
   data: {
-    phoneRule: {
-      type: 'phone',
-      required: true
-    },
+    showOverlay: false
   },
   onLoad: function () {
+  },
 
+  show() {
+    this.setData({
+      showOverlay: true
+    })
   }
 })

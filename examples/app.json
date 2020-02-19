@@ -11,6 +11,6 @@
   "style": "v2",
   "sitemapLocation": "sitemap.json",
   "usingComponents": {
-    "be-field": "/dist/field/index"
+    "be-overlay": "/dist/overlay/index"
   }
 }

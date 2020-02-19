@@ -1,0 +1,3 @@
+<view class="bl-overlay {{show ? 'show' : ''}}" catch:tap="onClick">
+  <slot />
+</view>
